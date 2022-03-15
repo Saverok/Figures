@@ -85,6 +85,6 @@ SELECT prod.ProductName, cat.CategoryName
 FROM dbo.Orders AS ord
 JOIN dbo.Products AS prod ON prod.ProductID = ord.ProductID
 LEFT JOIN dbo.Categories AS cat ON cat.CategoryID = ord.CategoryID
-GROUP BY prod.ProductName, cat.CategoryName
+GROUP BY prod.ProductName, cat.CategoryName;
 GO
 
