@@ -13,15 +13,15 @@ namespace Figures.Classes.Entitys
         private double secondSide;
         private double thierdSide;
 
-        public Triangle(double fierstSide, double secondSide, double thirdSide)
+        public Triangle(double fierstSide, double secondSide, double thierdSide)
         {
-            if (fierstSide <= 0 || secondSide <= 0 || thirdSide <= 0)
+            if (fierstSide <= 0 || secondSide <= 0 || thierdSide <= 0)
             {
                 throw new ArgumentException("Side length must be greater than 0");
             }
             this.fierstSide = fierstSide;
             this.secondSide = secondSide;
-            this.thierdSide = thirdSide;
+            this.thierdSide = thierdSide;
         }
 
         public double GetArea()
