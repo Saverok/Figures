@@ -42,7 +42,8 @@ namespace Figures.Classes.Entitys
             };
             triangle = triangle
               .Select(side => Math.Pow(side, degree))
-              .OrderBy(side => side).ToList();
+              .OrderBy(side => side)
+              .ToList();
             return triangle.LastOrDefault() == triangle.SkipLast(skipCount).Sum();
         }
     }
