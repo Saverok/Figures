@@ -6,7 +6,7 @@ using System;
 namespace FiguresTests
 {
     [TestFixture]
-    public class Tests
+    public class FiguresControllerTests
     {
         FiguresController controller;
 

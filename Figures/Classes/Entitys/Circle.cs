@@ -5,7 +5,7 @@ namespace Figures.Classes.Entitys
 {
     public class Circle: IFigure
     {
-        private double radius { get; init; }
+        private double radius;
         
         public Circle(double radius)
         {

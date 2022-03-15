@@ -6,8 +6,6 @@ namespace FiguresTests
     [TestFixture]
     public class TriangleTests
     {
-        Triangle triangle;
-
         [Test]
         [TestCase(5, 3, 4)]
         [TestCase(3, 5, 4)]
