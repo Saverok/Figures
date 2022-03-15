@@ -11,7 +11,7 @@ namespace Figures.Classes.Entitys
         private readonly int degree = 2;
         private double fierstSide;
         private double secondSide;
-        private double thirdSide;
+        private double thierdSide;
 
         public Triangle(double fierstSide, double secondSide, double thirdSide)
         {
@@ -21,14 +21,14 @@ namespace Figures.Classes.Entitys
             }
             this.fierstSide = fierstSide;
             this.secondSide = secondSide;
-            this.thirdSide = thirdSide;
+            this.thierdSide = thirdSide;
         }
 
         public double GetArea()
         {
-            var halfPerimeter = (fierstSide + secondSide + thirdSide) / 2;
+            var halfPerimeter = (fierstSide + secondSide + thierdSide) / 2;
             var area = Math.Sqrt(halfPerimeter * (halfPerimeter - fierstSide)
-                * (halfPerimeter - secondSide) * (halfPerimeter - thirdSide));
+                * (halfPerimeter - secondSide) * (halfPerimeter - thierdSide));
             return area;
         }
 
@@ -38,7 +38,7 @@ namespace Figures.Classes.Entitys
             {
                 fierstSide,
                 secondSide,
-                thirdSide
+                thierdSide
             };
             triangle = triangle
               .Select(side => Math.Pow(side, degree))
