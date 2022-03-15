@@ -10,9 +10,9 @@ namespace Figures.Classes
             return circle.GetArea();
         }
 
-        public double GetFigureArea(double fierstSide, double secondSide, double thirdSide)
+        public double GetFigureArea(double fierstSide, double secondSide, double thierdSide)
         {
-            var triangle = new Triangle(fierstSide, secondSide, thirdSide);
+            var triangle = new Triangle(fierstSide, secondSide, thierdSide);
             return triangle.GetArea();
         }
     }
